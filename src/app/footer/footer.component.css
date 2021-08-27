@@ -1,0 +1,42 @@
+ul{
+    list-style: none;
+    padding-left: 30%;
+    padding-right: 30%;
+    display: flex;
+   justify-content: space-between;
+   align-content: center;
+       
+}
+footer{
+    width:100%;
+    display: block;
+    color: black;
+   text-align: center;
+   padding-top: 2%;
+   position: fixed;
+  bottom: 0;
+  background-color: white;
+
+}
+
+button{
+    
+    border: none;
+}
+button:hover{
+    background-color: rgb(194, 189, 189);
+
+}
+@media (max-width: 450px){
+    svg{
+        width: 140%;
+    }
+    button{
+        width: 90%;
+        height: 80%;
+        justify-content:space-between ;
+    }
+    footer{
+        margin-top: 13%;
+    }
+}

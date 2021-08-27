@@ -1,0 +1,55 @@
+
+    <ul class="contain">
+        <li><h3>POMODORO</h3>
+          <select class="form-select" aria-label="Default select example">
+            <option selected></option>
+            <option value="1">20 minutes</option>
+            <option value="2">25 minutes</option>
+            <option value="3">30 minutes</option>
+          </select></li>
+        <li><h3>BREAK</h3>
+          <select class="form-select" aria-label="Default select example">
+            <option selected></option>
+            <option value="1">5 minutes</option>
+            <option value="2">6 minutes</option>
+            <option value="3">7 mintes</option>
+          </select></li>
+        <li><h3>LONG BREAK</h3>
+          <select class="form-select" aria-label="Default select example">
+            <option selected></option>
+            <option value="1">10 minutes</option>
+            <option value="2">15 minutes</option>
+            <option value="3">20 minutes</option>
+          </select></li>
+          <li><h3>TIME BEFORE LONG BREAK</h3>
+            <select class="form-select" aria-label="Default select example">
+              <option selected></option>
+              <option value="1">Three Rounds</option>
+              <option value="2">Four Rounds</option>
+              <option value="3">Five Rounds</option>
+            </select></li>
+            <li><h3>ALARM</h3>
+              <select class="form-select" aria-label="Default select example">
+                <option selected></option>
+                <option value="1">Play music</option>
+                <option value="2">Pause music</option>
+                <option value="3">Stop music</option>
+              </select></li>
+      </ul>
+      
+      <div class="b">
+        <button class="start" (click)="cd1.restart()"style="padding: 1.4%;" (click) = getstart()>Start</button>
+      </div>
+      <div class="timer">
+      <countdown autostart="false" #cd1 [config]="{leftTime: 1500}" ></countdown></div><br>
+<div class="prs"><button class="below" (click)="cd1.pause()" >Pause</button>
+<button class="below"(click)="cd1.resume()" >Resume</button>
+<button class="below"(click)="cd1.stop()" >Stop</button>
+<button class="below"(click)="cd1.restart()" >Restart</button>
+</div>
+
+
+ 
+      
+
+
